@@ -20,7 +20,7 @@ Vagrant.configure(2) do |config|
   # boxes at https://atlas.hashicorp.com/search.
   config.vm.box = "packer-ubuntu-16.10-amd64"
   config.vm.hostname = "eclipse.ide.linux"
-  config.vm.box_url = "/Users/cw/packer/packer-templates/ubuntu-16.10-amd64-virtualbox.box" 
+  config.vm.box_url = "../packer-templates/ubuntu-16.10-amd64-virtualbox.box" 
 
   # Disable automatic box update checking. If you disable this, then
   # boxes will only be checked for updates when the user runs
