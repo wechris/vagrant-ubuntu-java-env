@@ -1,4 +1,20 @@
-#Vagrant Provisioning Java Environment
+## Build a machine with packer 
+
+Clone the repository:
+
+    $ git clone https://github.com/wechris/packer-templates && cd packer-templates
+
+Build a machine image from the template in the repository:
+
+    $ packer build -only=virtualbox-iso ubuntu-16.10-amd64.json
+
+Add the built box to Vagrant:
+
+    $ vagrant box add packer-ubuntu-16.10-amd64 ubuntu-16.10-amd64-virtualbox.box
+
+## Build Vagrant Box
+
+#Vagrant Provisioning Development Environment
 
  The objective of this simple project is allow the creation of a java development environment containing basics features.
  Using [Vagrant Provisioning](https://www.vagrantup.com/docs/provisioning/) over ssh script to make the installations and customizations.
