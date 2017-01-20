@@ -1,7 +1,7 @@
 #
 # VARIABLES
 VM_IP = "192.168.20.10"
-GIT_USER = "wechris"  #"John Doe"
+GIT_USER = "John Doe"
 DIR_HOME = "/home/vagrant"
 HOST = "linux"
 
@@ -62,7 +62,7 @@ Vagrant.configure(2) do |config|
   #
     # Customize the amount of memory on the VM:
     vb.name = "env_java"
-    vb.gui = true
+    #vb.gui = true
     vb.linked_clone = true
     # Use VBoxManage to customize the VM. For example to change memory:
     vb.customize ["modifyvm", :id, "--memory", "4096", "--cpus", "2"]
