@@ -2,7 +2,7 @@
 
 Clone the repository:
 
-    $ git clone https://github.com/wechris/packer-templates && cd packer-templates
+    $ git clone https://github.com/wechris/packer-templates.git && cd packer-templates
 
 Build a machine image from the template in the repository:
 
@@ -13,6 +13,15 @@ Add the built box to Vagrant:
     $ vagrant box add packer-ubuntu-16.10-amd64 ubuntu-16.10-amd64-virtualbox.box
 
 ## Build Vagrant Box
+
+Clone the repository:
+
+    cd ..
+    $ git clone https://github.com/wechris/vagrant-ubuntu-java-env.git && cd vagrant-ubuntu-java-env
+    
+Build the box
+
+    $ vagrant up --provision
 
 #Vagrant Provisioning Development Environment
 
